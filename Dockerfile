@@ -8,7 +8,7 @@ RUN apt-get update && \
 
 ENV NEWRELIC_LICENSE ''
 ENV NEWRELIC_APP     ''
-ENV NGINX_STATUS_URL ''
+ENV NGINX_STATUS_URL 'http://localhost/nginx_stub_status'
 
 COPY nginx-nr-agent.ini /etc/nginx-nr-agent/nginx-nr-agent.ini
 COPY nginx-nr-agent.sh /opt/
